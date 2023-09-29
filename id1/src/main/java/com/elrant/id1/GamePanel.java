@@ -2,14 +2,9 @@ package com.elrant.id1;
 
 import java.awt.Color;
 import java.awt.Dimension;
-import java.awt.DisplayMode;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
-import java.awt.GraphicsDevice;
-import java.awt.GraphicsEnvironment;
-import java.awt.Rectangle;
-import java.util.concurrent.TimeUnit;
-
+import java.awt.Toolkit;
 import javax.swing.JPanel;
 
 public class GamePanel extends JPanel implements Runnable {
@@ -88,6 +83,7 @@ public class GamePanel extends JPanel implements Runnable {
     }
 
     public void paintComponent(Graphics g) {
+        Toolkit.getDefaultToolkit().sync();
         super.paintComponent(g);
         Graphics2D g2 = (Graphics2D) g;
         g2.setColor(Color.white);
