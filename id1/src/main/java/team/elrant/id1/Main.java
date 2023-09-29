@@ -1,4 +1,4 @@
-package com.elrant.id1;
+package team.elrant.id1;
 
 import javax.swing.JFrame;
 

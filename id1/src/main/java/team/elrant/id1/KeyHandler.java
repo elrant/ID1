@@ -1,4 +1,4 @@
-package com.elrant.id1;
+package team.elrant.id1;
 
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
