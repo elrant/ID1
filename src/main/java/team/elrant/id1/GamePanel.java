@@ -7,6 +7,7 @@ import java.awt.Graphics2D;
 import java.awt.Toolkit;
 import javax.swing.JPanel;
 import team.elrant.id1.entity.Player;
+import team.elrant.id1.tile.TileManager;
 
 public class GamePanel extends JPanel implements Runnable {
     final int originalTileSize = 16; // 16x16 pixels
@@ -18,6 +19,7 @@ public class GamePanel extends JPanel implements Runnable {
     final int screenWidth = maxScreenColumns * tileSize;
     final int screenHeight = maxScreenRows * tileSize;
 
+    TileManager tileManager = new TileManager(this);
     KeyHandler keyHandler = new KeyHandler();
     Thread gameThread;
     Player player = new Player(this, keyHandler);
@@ -89,6 +91,7 @@ public class GamePanel extends JPanel implements Runnable {
         Toolkit.getDefaultToolkit().sync();
         super.paintComponent(g);
         Graphics2D g2 = (Graphics2D) g;
+        tileManager.drawTile(g2);
         player.draw(g2);
         g2.dispose();
     }
