@@ -17,7 +17,7 @@ public class Player extends Entity {
         this.gp = gp;
         this.keyHandler = keyHandler;
         setDefaultValues();
-        getPlayerImage();
+        loadPlayerSprites();
     }
 
     public void setDefaultValues() {
@@ -106,7 +106,7 @@ public class Player extends Entity {
         g2.drawImage(image, x, y, gp.tileSize, gp.tileSize, null);
     }
 
-    public void getPlayerImage() {
+    private void loadPlayerSprites() {
         try {
             up1 = ImageIO.read(new File("./res/player/up1.png"));
             up2 = ImageIO.read(new File("./res/player/up2.png"));
