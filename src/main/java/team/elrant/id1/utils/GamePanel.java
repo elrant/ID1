@@ -1,4 +1,4 @@
-package team.elrant.id1;
+package team.elrant.id1.utils;
 
 import java.awt.Color;
 import java.awt.Dimension;

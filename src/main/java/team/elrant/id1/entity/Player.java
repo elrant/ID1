@@ -6,9 +6,8 @@ import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
-import team.elrant.id1.GamePanel;
-import team.elrant.id1.KeyHandler;
-import team.elrant.id1.utils.ResourceLoader;
+import team.elrant.id1.utils.GamePanel;
+import team.elrant.id1.utils.KeyHandler;
 
 public class Player extends Entity {
 

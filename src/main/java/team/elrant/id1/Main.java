@@ -2,6 +2,8 @@ package team.elrant.id1;
 
 import javax.swing.JFrame;
 
+import team.elrant.id1.utils.GamePanel;
+
 public class Main {
     public static void main(String[] args) {
 
